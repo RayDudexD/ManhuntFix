@@ -1,0 +1,47 @@
+; weapon flags
+;
+; format:
+; a - id
+; b - flag:
+; 1		- explode head like shotguns
+; 2     - explode head
+; 4 	- body attacks with a melee weapon will cause head explosion
+; 8     - Silenced gunshots
+; 16	- Firearm has scope
+; 32 	- Firearm has laser, used by enemies only! Requires laser bone else game will crash
+; 64 	- body attacks with a melee weapon will cause head decap
+;
+; combine these flags by adding numbers, eg. 1 + 8 = 9, a weapon will be silenced and cause head explosions
+;
+; c - execution:
+;	BAG, KNIFE, CROWBAR, BAT, SICKLE, WIRE, CLEAVER, AXE, NIGHTSTICK, HAMMER, CHAINSAW, PIGSHARD, PIGWIRE, PIGSPIK, RAMIREZ, DEFAULT
+;default settings
+;a						b	c
+CT_SHOTGUN  			1	none
+CT_SAWNOFF  	 		1   none
+CT_SHOTGUN_TORCH 		1	none
+CT_SNIPER_RIFLE	 		50  none
+CT_TRANQ_RIFLE			56	none
+CT_BASEBALL_BAT	 		4	BAT
+CT_W_BASEBALL_BAT 		4	BAT
+CT_BASEBALL_BAT_BLADES	4	BAT
+CT_BAG 					0   BAG
+CT_WIRE 				0 	WIRE
+CT_KNIFE				0	KNIFE
+CT_SHARD				0	KNIFE
+CT_CLEAVER 				0   CLEAVER
+CT_CROWBAR 				0	CROWBAR
+CT_SICKLE 				0 	SICKLE
+CT_NIGHTSTICK 			0 	NIGHTSTICK
+CT_SMALL_BAT 			0	NIGHTSTICK
+CT_AXE 					0	AXE
+CT_ICEPICK 				0 	AXE
+CT_MACHETE 				0 	CLEAVER
+CT_HAMMER 				0 	HAMMER
+CT_CHAINSAW 			0 	CHAINSAW
+CT_CHAINSAW_PLAYER		0 	CHAINSAW
+CT_PIGSY_SHARD 			0	PIGSHARD  
+CT_WOODEN_SPIKE  		0   PIGSPIK   
+CT_PIGSY_WIRE    		0   PIGWIRE   
+CT_GLOCK_SILENCED       8   none
+;end of default settings
